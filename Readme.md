@@ -1,3 +1,8 @@
+title-week1 phase_1 toy challange
+=>calculate grade
+=>speed detector
+=>calculate netsalary.
+
 //calculateGrade
 1.calculate grade
 This javascript program calculates students grades after input of their marks.
@@ -37,7 +42,7 @@ This javascript program calculates students grades after input of their marks.
  //////
 
 
- 
+
  3. calculating net salary
  This javascript program is meant to calculate an individual net salary by getting the input of basic salary and benefits.
  //usage
