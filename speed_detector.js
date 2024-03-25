@@ -4,7 +4,8 @@ function calculatedemeritPoint(speed){
     const kmAboveSpeedLimit=5;
     const demeritPoints=Math.floor((speed-speedLimit)/kmAboveSpeedLimit);//checks if the points exceeds 12 points 
 //if the speedlimit is below 70 its will output "ok"
-        if(speed<70){
+        if(speed<70)
+        {
             return `Ok`;
         }
          //if the points exceeds 12 license is suspended
@@ -15,7 +16,8 @@ function calculatedemeritPoint(speed){
     else
     {
         return demeritPoints;
-    }}
+    }
+}
     
     //readline allow user to input and get output
 function main() {
