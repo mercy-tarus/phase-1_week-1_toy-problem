@@ -124,7 +124,7 @@ else if (grossSalary > 47059)
         nssfDeduction: nssfDeduction,
         tax: tax,
     }; 
-    
+        
 }
 //create interface to prompt the user
 function main(){

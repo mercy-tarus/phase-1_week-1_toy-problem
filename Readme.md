@@ -12,6 +12,8 @@ This javascript program calculates students grades after input of their marks.
     git clone https://github.com/your_username_/Project-Name.git
  3.npm install
  4.run npm test
+
+ 
  //usage
 
  This is how the system should compute the grades
