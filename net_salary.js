@@ -18,6 +18,18 @@ else if (grossSalary >= 24001 && grossSalary <= 32333)
  {
     tax = grossSalary * 0.25;
 } 
+else if(grossSalary>=32334 && grossSalary<=500000)
+{
+tax=grossSalary*0.3;
+
+}
+else if(grossSalary>=500001 && grossSalary<=800000)
+{
+    tax=grossSalary*0.325;
+}
+else if(grossSalary>800000){
+    tax=grossSalary*0.35;
+}
 
     //calculate nhifDeduction
     
