@@ -1,7 +1,7 @@
 //function to calculate net_salary 
 function calculateNetSalary(basicSalary, benefits)
 {
-    const nssfRate= 0.012  //0.4% nssf rates
+    const nssfRate= 0.12  //0.4% nssf rates
     const nhifRate=0.0245   // 2.45% nhif rates
     const kraRate=0.1    //10% tax rate
 
@@ -10,26 +10,15 @@ let grossSalary= basicSalary+benefits;
 
 // calculate tax
 let tax=kraRate*grossSalary;
-if (grossSalary <= 12,298) 
+if (grossSalary <= 24000) 
 {
     tax = grossSalary * 0.1;
 } 
-else if (grossSalary >= 12999 && grossSalary <= 23885)
+else if (grossSalary >= 24001 && grossSalary <= 32333)
  {
-    tax = grossSalary * 0.15;
-} 
-else if (grossSalary >= 23886 && grossSalary <= 35472) 
-{
-    tax = grossSalary * 0.2;
-} 
-else if (grossSalary >= 35473 && grossSalary <= 47059) 
-{
     tax = grossSalary * 0.25;
 } 
-else if (grossSalary > 47059) 
-{
-    tax = grossSalary * 0.3;
-}
+
     //calculate nhifDeduction
     
     let nhifDeduction=grossSalary*nhifRate;
@@ -103,6 +92,9 @@ else if (grossSalary > 47059)
                  {
                     nhifDeduction = 1700;
                 }
+                else{
+                    nhifDeduction=grossSalary*0.0245; 
+                }
                 //calculate nssfDeduction
     let nssfDeduction=grossSalary*nssfRate
         if (grossSalary > 18000) 
@@ -147,5 +139,5 @@ readline.question("Enter the basic salary: ", (basicSalary) =>
     });
 });
 }
-//call main function to execute the program
+
 main();
