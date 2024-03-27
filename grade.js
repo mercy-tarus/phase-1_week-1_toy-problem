@@ -31,11 +31,14 @@ function main() {
      (marks) => { marks = parseInt(marks);
         if (!isNaN(marks) && marks >= 0 && marks <= 100) {
             const grade = calculateGrade(marks);
+            
             console.log(`The student's grade is: ${grade}`);
         } 
         else 
         {
-            console.log("Please enter a valid marks:");
+            console.log("Please enter a number:");
+            main();
+            return;
         }
         readline.close();
     });
