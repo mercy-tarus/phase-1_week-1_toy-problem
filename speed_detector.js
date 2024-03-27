@@ -35,6 +35,8 @@ function main() {
         else 
         {
             console.log("Please enter a valid speed:");
+            main();
+            return;
         }
         readline.close();
     });
